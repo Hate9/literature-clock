@@ -51,8 +51,14 @@
                 // Write to HTML
                 //document.getElementById('time').innerHTML = timeCode;     // Show time
                 try {
-                    document.getElementById('lit_quote').innerHTML =
-                        lit_json_single.quote_first + '<em>' + lit_json_single.quote_time_case + '</em>' + lit_json_single.quote_last;
+					var quoteText = lit_json_single.quote_first + '<em>' + lit_json_single.quote_time_case + '</em>' + lit_json_single.quote_last;
+					if (!quoteText.startsWith("\"")) {
+						quoteText = "\"" + quoteText;
+					}
+					if (!quoteText.endsWith("\"")) {
+						quoteText = quoteText + "\"";
+					}
+                    document.getElementById('lit_quote').innerHTML = quoteText;
                     //document.getElementById('book').innerHTML = lit_json_single.title;
                     //document.getElementById('author').innerHTML = lit_json_single.author;
 
@@ -82,14 +88,16 @@
 </head>
 
 <body onload="startTime(); document.body.style.opacity = 1;">
-    <!-- <div id="time"></div> -->
-    <div id="main_text">
-        <blockquote id="lit_quote"></blockquote>
-        <!--<cite>
-            -
-            <span id="book"></span>,
-            <span id="author"></span>
-        </cite>-->
+    <div class="bg">
+        <!-- <div id="time"></div> -->
+        <div id="main_text">
+            <blockquote id="lit_quote"></blockquote>
+            <!--<cite>
+                -
+                <span id="book"></span>,
+                <span id="author"></span>
+            </cite>-->
+        </div>
     </div>
 </body>
 </html>
