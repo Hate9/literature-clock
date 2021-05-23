@@ -8,7 +8,6 @@ html {
 }
 
 body {
-    background: url(https://source.unsplash.com/collection/12011365/1920x1080) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -37,7 +36,7 @@ body {
 
 
 #main_text {
-	background: inherit;
+    background: inherit;
     width: 80vw;
     margin: auto; 
     color: dimgrey;
