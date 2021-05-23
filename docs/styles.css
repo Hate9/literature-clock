@@ -22,7 +22,7 @@ body {
 
 
 #lit_quote {
-	background: inherit;
+    background: inherit;
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -30,7 +30,7 @@ body {
 }
 
 #lit_quote em {
-	background: inherit;
+    background: inherit;
     font-style: normal;
 }
 
