@@ -77,10 +77,8 @@
 
 </head>
 
-<body onload="startTime()">
-
+<body onload="startTime(); document.getElementById('body').style.opacity = 1;" id="body">
     <!-- <div id="time"></div> -->
-
     <div id="main_text">
         <blockquote id="lit_quote"></blockquote>
         <cite>
@@ -89,20 +87,5 @@
             <span id="author"></span>
         </cite>
     </div>
-
-    <div id="buttom">
-        <div id="github">
-            <a href="https://github.com/JohannesNE/literature-clock">GitHub</a>
-        </div>
-        <span id="based_on">
-            Based on work and idea by
-            <a href="http://www.eerlijkemedia.nl/">Jaap Meijers</a> (
-            <a href="https://www.instructables.com/id/Literary-Clock-Made-From-E-reader/">E-reader clock</a>) and
-            <a href="http://litclock.mohawkhq.com/">The Guardian</a>
-        </span>
-    </div>
-
-
 </body>
-
 </html>

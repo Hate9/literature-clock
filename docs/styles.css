@@ -1,8 +1,36 @@
 html, body { 
     margin: 0; padding: 0;
     height: 100%; 
-    overflow: auto;
+    overflow: hidden;
+}
+html {
+    background-color: black;
+}
 
+body {
+    background: url(https://source.unsplash.com/collection/495468/1920x1080) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    opacity: 0.0;
+    -webkit-transition: opacity 0.2s linear;
+    -moz-transition: opacity 0.2s linear;
+    -o-transition: opacity 0.2s linear;
+    -ms-transition: opacity 0.2s linear;
+    transition: opacity 0.2s linear;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes background {
+    from {opacity: 0.2;}
+    to {opacity: 1;}
+}
+
+/* Standard syntax */
+@keyframes background {
+    from {opacity: 0.2;}
+    to {opacity: 1;}
 }
 
 /*
