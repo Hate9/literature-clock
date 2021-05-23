@@ -52,11 +52,11 @@
                 //document.getElementById('time').innerHTML = timeCode;     // Show time
                 try {
 					var quoteText = lit_json_single.quote_first + '<em>' + lit_json_single.quote_time_case + '</em>' + lit_json_single.quote_last;
-					if (!quoteText.startsWith("\"")) {
-						quoteText = "\"" + quoteText;
-					}
-					if (!quoteText.endsWith("\"")) {
+					if (quoteText.startsWith("\"") && !quoteText.endsWith("\"")) {
 						quoteText = quoteText + "\"";
+					}
+					if (quoteText.endsWith("\"") && !quoteText.startsWith("\"")) {
+						quoteText = "\"" + quoteText;
 					}
                     document.getElementById('lit_quote').innerHTML = quoteText;
                     //document.getElementById('book').innerHTML = lit_json_single.title;
