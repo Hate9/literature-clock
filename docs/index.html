@@ -58,6 +58,13 @@
                     if (quoteText.endsWith("\"") && !quoteText.startsWith("\"")) {
                         quoteText = "\"" + quoteText;
                     }
+					
+                    if (quoteText.startsWith("'") && !quoteText.endsWith("'")) {
+                        quoteText = quoteText + "'";
+                    }
+                    if (quoteText.endsWith("'") && !quoteText.startsWith("'")) {
+                        quoteText = "'" + quoteText;
+                    }
                     document.getElementById('lit_quote').innerHTML = quoteText;
                     //document.getElementById('book').innerHTML = lit_json_single.title;
                     //document.getElementById('author').innerHTML = lit_json_single.author;
