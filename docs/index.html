@@ -53,8 +53,8 @@
                 try {
                     document.getElementById('lit_quote').innerHTML =
                         lit_json_single.quote_first + '<em>' + lit_json_single.quote_time_case + '</em>' + lit_json_single.quote_last;
-                    document.getElementById('book').innerHTML = lit_json_single.title;
-                    document.getElementById('author').innerHTML = lit_json_single.author;
+                    //document.getElementById('book').innerHTML = lit_json_single.title;
+                    //document.getElementById('author').innerHTML = lit_json_single.author;
 
                     // set fontsize according to length
                     // Equation to make fontsize match
@@ -85,11 +85,11 @@
     <!-- <div id="time"></div> -->
     <div id="main_text">
         <blockquote id="lit_quote"></blockquote>
-        <cite>
+        <!--<cite>
             -
             <span id="book"></span>,
             <span id="author"></span>
-        </cite>
+        </cite>-->
     </div>
 </body>
 </html>
